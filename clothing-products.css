@@ -1,0 +1,62 @@
+.side {
+    float:left;
+    width: 15%;
+    margin-top:10px;
+}
+.side right {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+    text-align: right;
+}
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+.bar-5 {
+    width: 60%; height: 18px; background-color: #4CAF50;
+}
+.bar-4 {
+    width: 30%; height: 18px; background-color: #2196F3;
+}
+.bar-3 {
+    width: 10%; height: 18px; background-color: #00bcd4;
+}
+.bar-2 {
+    width: 4%; height: 18px; background-color: #ff9800;
+}
+.bar-1 {
+    width: 15%; height: 18px; background-color: #f44336;
+}
+
+/*--scroll to top button--*/
+.button-to-top:hover{
+
+    bacground-color: #ed702b;
+    text-decoration: none;
+}
+
+.button-to-top {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right:1rem;
+    width:3.2rem;
+    height: 3.2rem;
+    line-height:3.0rem;
+    font-size:1.4rem;
+    color:#fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    border-radius: 3.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+/* end of scroll to top button */

@@ -1,0 +1,39 @@
+.star{
+    color: goldenrod;
+    font-size: 1.2rem;
+    padding: 0 0rem; /* space out the stars */
+    float: revert;
+}
+.star::before{
+    content: '\2606';    /* star outline */
+    cursor: pointer;
+    /*float: left;*/
+    float: revert;
+}
+.star:hover::before {
+    /* the :hover should come first */
+    content: '\2605';
+    color: #bada55;
+    /*position: absolute;*/
+    float: revert;
+}
+.star.rated::before{
+    /* the style for a selected star */
+    content: '\2605';  /* filled star */
+    float: revert;
+}
+.stars{
+    counter-reset: rateme 0;
+    font-size: 2.0rem;
+    font-weight: 800;
+    float: revert;
+}
+.star.rated{
+    counter-increment: rateme 1;
+    float: unset;
+}
+
+.stars::after{
+    content: counter(rateme) '/5';
+    /*float: revert;*/
+}
